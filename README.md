@@ -24,5 +24,6 @@ I have broken this down into the following sections, with a list of Articles, Ne
 | Year | Month | Title and Link |
 |----|---------|---------------------------------------------------------------------------------|
 |2024 | Feburary | [Data Scientists Targeted by Malicious Hugging Face ML Models with Silent Backdoor](https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/)|
+|2024 | Feburary | [LLM Agents can Autonomously Hack Websites](https://arxiv.org/abs/2402.06664)|
 |2024 | March | [Google engineer caught stealing AI tech secrets for Chinese firms](https://www.bleepingcomputer.com/news/google/google-engineer-caught-stealing-ai-tech-secrets-for-chinese-firms/)|
 |2024 | March | [Here Come the Worms](https://www.wired.com/story/here-come-the-ai-worms/) |
