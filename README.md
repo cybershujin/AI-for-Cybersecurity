@@ -6,7 +6,7 @@ I have broken this down into the following sections, with a list of Articles, Ne
 
 ## -[Tools for Cybersecurity Professionals that use AI, LLMs or ML](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity/tree/main/AI%20Tools%20for%20Cybersecurity%20Professionals)
 
-## -Learning about AI, LLMs, ML for Cybersecurity professionals
+## -[Learning about AI, LLMs, ML for Cybersecurity professionals](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity/tree/main/Learning)
 
 ## -[Threats and Attacks on AI, LLMs, ML](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity/tree/main/Threats%20and%20Attacks%20on%20AI%20and%20ML)
 
