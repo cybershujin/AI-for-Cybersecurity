@@ -30,3 +30,4 @@ I have broken this down into the following sections, with a list of Articles, Ne
 |2024 | Feburary | [Senator Asks Big Banks How They're Going to Stop AI Cloned Voices From Breaking Into Accounts](https://www.vice.com/en/article/n7enqd/senator-asks-banks-stop-ai-cloned-voices) |
 |2024 | March | [Google engineer caught stealing AI tech secrets for Chinese firms](https://www.bleepingcomputer.com/news/google/google-engineer-caught-stealing-ai-tech-secrets-for-chinese-firms/)|
 |2024 | March | [Here Come the Worms](https://www.wired.com/story/here-come-the-ai-worms/) |
+|2024 | March | [Crowdstrike Global Threat Report 2024](https://asantecloud.com/wp-content/uploads/2024/02/GlobalThreatReport2024_Asante.pdf)|
