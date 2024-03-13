@@ -20,4 +20,4 @@ See my list of "getting started prompts" for using GPTs for Cybersecurity purpos
 ### Cyber Threat Intelligence
 
 - [Threat Intel Bot](https://chat.openai.com/g/g-Vy4rIqiCF-threat-intel-bot) - There are several intelligence bots out there, and thank goodness for my own job security they're pretty meh. This one is probably the best so far I've tested.
-- 
+- Mandiant Advantage 
