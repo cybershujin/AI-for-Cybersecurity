@@ -1,4 +1,4 @@
-# Artifical Intellingence, Large Language Models (LLMs), and Machine Learning - Oh My!
+# Artificial Intelligence, Large Language Models (LLMs), and Machine Learning For the Cybersecurity Professional
 ## Resources for the Cybersecurity Professional
 I hope to mostly focus here on a few items that are to help cybersecurity professionals in their day to day lives.
 
