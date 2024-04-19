@@ -7,7 +7,21 @@ See my list of "getting started prompts" for using GPTs for Cybersecurity purpos
 ## Other lists
 
 - First and foremost this is probably the best list out there [Fr0gger Awesome GTP Agents for Cybersecurity](https://github.com/fr0gger/Awesome-GPT-Agents)
-- [Awesome GPT + Security](https://github.com/cckuailong/awesome-gpt-security)
+[Awesome GPT + Security](https://github.com/cckuailong/awesome-gpt-security)
+
+- OpenAI has just open sourced security bots they've built for themselves.
+
+Here's what they do:
+
+🛡Incident Response Slackbot
+Automatically chats with users who have been part of an incident alert.
+
+✍ SDLC Slackbot
+Decides if a project merits a security review.
+
+✉ Triage Slackbot
+Triages inbound requests in a Slack channel to different sub-teams within your organization.
+[OpenAI Security Bots](https://github.com/openai/openai-security-bots)
 
 ## Tools for all Cybersecurity professionals
 - [MITREGPT](https://chat.openai.com/g/g-IZ6k3S4Zs-mitregpt) - great for quickly mapping TTPs and asking about tactics and techniques
