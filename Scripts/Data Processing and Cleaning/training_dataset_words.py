@@ -24,3 +24,5 @@ for file in get_file_list("../data/filepath/filename2"):
     
 x_spam_data = np.array(list_data, dtype=object)
 x_spam_data.shape
+
+## after this, you'll need to do the vectorize_sequence
