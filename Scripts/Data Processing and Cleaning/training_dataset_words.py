@@ -6,8 +6,21 @@
 
 WordsToWorkWith = 5000
 list_data = list()
-for file in get_file_list("../data/Enron/ham"):
+for file in get_file_list("../data/filepath/filename1"):
     list_data.append(tokenize_email(get_words(file), words=WordsToWorkWith))
     
 x_ham_data = np.array(list_data, dtype=object)
 x_ham_data.shape
+
+#notice the filename1 and filename2 below
+# you will need to do this as many times as you have classifications
+# so if your labels on the data are "legit" and "spam" for emails
+# you need to do this for legitemails and spamemails 
+#legitemails filename1 and spamemails filename2 for example
+
+list_data = list()
+for file in get_file_list("../data/filepath/filename2"):
+    list_data.append(tokenize_email(get_words(file), words=WordsToWorkWith))
+    
+x_spam_data = np.array(list_data, dtype=object)
+x_spam_data.shape
