@@ -1,3 +1,5 @@
+# this gets the words and then sorts them into a dictionary where it is sorted by frequency and paired with a number that represents the number of times that word appears in the file
+# 
 all_words = dict()
 for file in get_file_list("../data/file/path/filename"):
     words = get_words(file)
