@@ -1,3 +1,7 @@
+#make sure you import re and os if you have not already by uncommenting the next line
+# import re
+# import os
+
 def get_words(file_name):
     # We'll use a regular expression to find things that are not words or spaces.
     regex = re.compile("[^\w\s]")
