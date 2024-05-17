@@ -2,6 +2,7 @@
 # Your function must also accept a dimension value
 # Your function should multi-hot encode the input list of word indices representing emails. Use the dimension value to define the number of features in your multi-hot encoded array
 # Return the multi-hot encoded array
+#note that this example is using the spam / legit email analysis example
   
 def vectorize_sequence(word_index_array, dimension=WordsToWorkWith):
     """
