@@ -1,0 +1,16 @@
+#First crete a small script to just see the page structure
+
+#update next line
+web_server = 'domain.com'
+
+import requests
+
+page = requests.get(f'https://{web_server}/')
+print(page)
+
+print(page.text)
+print(page.content)
+
+#that is the end of the first script. Run this and observe the page structure
+
+#Next create a beautifulsoup script - see 
