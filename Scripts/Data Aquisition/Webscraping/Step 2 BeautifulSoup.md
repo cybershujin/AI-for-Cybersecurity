@@ -12,7 +12,7 @@ soup = BeautifulSoup(page.content, "lxml")
 str(list(soup)[1])[:800]
 print(soup.prettify()[:800])
 ```
-This allows you to see how things are nested together, you can usually see that they are separated by <div> elements
+This allows you to see how things are nested together, you can usually see that they are separated by div elements.
 If you see, for example this:
 ```
 <div class="phish" id="1186816">
@@ -29,8 +29,22 @@ To ensure quic...</pre>
    </div>
 </div>
 ```
+Then we would know that there s a div class called subject.
 
-#now examine the contents of the page
+Now you can run a new pythong script that is more specific to this
+
+```
+#now examine the contents of the page based on those elements
+web_server = 'domain.com'
+import requests
+from bs4 import BeautifulSoup
+
+
+page = requests.get(f'http://{web_server}/archive/')
+soup = BeautifulSoup(page.content, "lxml")
+
 subject_divs = soup.find_all("div", {"class":"subject"})
 # Let's use a list comprehension 
-[i for i in subject_divs][:20]
+results = [i for i in subject_divs][:20]
+print(results)
+```
