@@ -1,0 +1,68 @@
+import paramiko
+
+ssh = paramiko.SSHClient()h
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy)
+# UNCOMMENT AND UPDATE ssh.connect(hostname='DOMAINNAME.com', username='USER', password='PASS')
+
+#update this line with dates needed
+_, stdout, _ = ssh.exec_command('/bin/rwfilter --type=all --flags-initial S/SA --start-date 2019/05/01 --end-date 2019/05/03 --pass=stdout | rwcount -delimited=, --bin-size 3600')
+result = stdout.read()
+
+print(result.decode('ascii'))
+
+class SSHCommand:
+    def __init__(self, address="127.0.0.1", username="none", password="none"):
+        self.address = address
+        self.username = username
+        self.password = password
+        self.ssh = paramiko.SSHClient()
+        self.ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy)
+        self.ssh.connect(hostname=address, username=username, password=password)
+
+    def execute(self, command = ""):
+        _, stdout, _ = self.ssh.exec_command(command)
+        result = stdout.read()
+        return result.decode('ascii')
+
+#use the new built class above to issue a command and capture output into variable
+
+#UPDATE the line below for domain, user, pass
+ssh = SSHCommand(address='DOMAINNAME.com', username='USER', password='PASS')
+
+#use the next line to execute any SSH command and save the result into a variable
+result = ssh.execute('/bin/rwfilter --type=all --flags-initial S/SA --start-date 2019/05/01 \
+    --end-date 2019/05/03 --pass=stdout | /bin/rwcount -delimited=, --bin-size 3600')
+
+#structure the csv test into a dataframe for easier viewing
+
+from io import StringIO
+import pandas as pd
+
+def string_to_df(data):
+    return pd.read_csv(StringIO(data), sep=",")
+
+df = string_to_df(result)
+df
+
+# Sample code to automate finding a host that shows evidence of a strong signal:
+
+
+def process_host(host, threshold = 80000000):
+    result = ssh.execute(f'/bin/rwfilter --type=all --saddress={host} --flags-initial S/SA --start-date 2019/05/01 --end-date 2019/05/03 \
+    --pass=stdout | /bin/rwcount -delimited=, --bin-size 10')
+    host_df = string_to_df(result)
+    packets = host_df['Packets']
+    fft = np.fft.rfft(packets)
+    return np.any(abs(fft[500:]) > threshold)
+    
+# Get a list of all IP addresses seen initiating connections
+result = ssh.execute('/bin/rwfilter --type=all --flags-initial S/SA --start-date 2019/05/01 --end-date 2019/05/03 \
+    --pass=stdout | /bin/rwuniq --fields sip --delimited=","')
+hosts_df = string_to_df(result)
+hosts = np.array(hosts_df['sIP'])
+
+for host in hosts:
+    alert = process_host(host, threshold=(mean + stddev*4)) # From our calculation above, with slightly smaller threshold
+    # print(host)
+    if alert:
+        print(f"Possible signal found!  Host {host}.")
