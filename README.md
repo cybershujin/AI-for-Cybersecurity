@@ -6,7 +6,7 @@ I have broken this down into the following sections, with a list of Articles, Ne
 
 *New* Fresh from passing my GIAC Machine Learning Engineer (GMLE) exam, I put together a supplemental learning guide for anyone interested in the GMLE. Whether you are considering taking the SANs SEC595 course and want to know what you prerequisite knowledge is really needed, curious about the ground this course covers, or you're currently enrolled in the course and need some suggestions on additional resources for deeper understanding this resource is for you.
 
-## -[GMLE Supplemntal Study Guide for SEC595}(https://github.com/cybershujin/AI-for-Cybersecurity/blob/main/GMLE/Supplemental%20Learning%20Guide%20for%20GMLE.md)
+## -[GMLE Supplemntal Study Guide for SEC595](https://github.com/cybershujin/AI-for-Cybersecurity/blob/main/GMLE/Supplemental%20Learning%20Guide%20for%20GMLE.md)
 
 ## -[Tools for Cybersecurity Professionals that use AI, LLMs or ML](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity/tree/main/AI%20Tools%20for%20Cybersecurity%20Professionals)
 
