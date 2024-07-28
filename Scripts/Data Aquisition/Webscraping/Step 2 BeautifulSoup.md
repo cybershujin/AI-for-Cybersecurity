@@ -1,7 +1,10 @@
-Start your scrape.py file with:
+Start your firstscrape.py file with:
 
 ```
+web_server = 'domain.com'
+import requests
 from bs4 import BeautifulSoup
+
 
 page = requests.get(f'http://{web_server}/archive/')
 soup = BeautifulSoup(page.content, "lxml")
