@@ -1,3 +1,6 @@
+Start your scrape.py file with:
+
+```
 from bs4 import BeautifulSoup
 
 page = requests.get(f'http://{web_server}/archive/')
@@ -5,9 +8,9 @@ soup = BeautifulSoup(page.content, "lxml")
 #We're not printing the entire thing
 str(list(soup)[1])[:800]
 print(soup.prettify()[:800])
-
-#this allows you to see how things are nested together, you can usually see that they are separated by <div> elements
-#if you see, for example this:
+```
+This allows you to see how things are nested together, you can usually see that they are separated by <div> elements
+If you see, for example this:
 ```
 <div class="phish" id="1186816">
    <div class="subject">
