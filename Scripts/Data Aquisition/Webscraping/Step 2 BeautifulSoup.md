@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 
 page = requests.get(f'http://{web_server}/archive/')
 soup = BeautifulSoup(page.content, "lxml")
-# We're not printing the entire thing
+#We're not printing the entire thing
 str(list(soup)[1])[:800]
 print(soup.prettify()[:800])
 
