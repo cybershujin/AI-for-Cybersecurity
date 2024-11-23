@@ -19,4 +19,4 @@ I have broken this down into the following sections, with a list of Articles, Ne
 ### Other Resources
 [IncidentDatabase.ai](https://incidentdatabase.ai/apps/incidents/) -  Collection of AI Incidents (though not all are cyber security related) 
 
-[AI Hacking Playgroubnd](https://crucible.dreadnode.io/)
+[AI Hacking Playground](https://crucible.dreadnode.io/) - Learn AI Security Concepts hands-on!
