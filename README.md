@@ -17,6 +17,6 @@ I have broken this down into the following sections, with a list of Articles, Ne
 ## -[AI Cybersecurity Guidance](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity/tree/main/AI%20Cybersecurity%20Guidance)
 
 ### Other Resources
-Great Collection of AI Incidents (though not all are cyber security related) available from the [IncidentDatabase.ai](https://incidentdatabase.ai/apps/incidents/)
+[IncidentDatabase.ai](https://incidentdatabase.ai/apps/incidents/) -  Collection of AI Incidents (though not all are cyber security related) 
 
 [AI Hacking Playgroubnd](https://crucible.dreadnode.io/)
