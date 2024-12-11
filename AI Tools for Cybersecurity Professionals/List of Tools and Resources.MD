@@ -39,6 +39,8 @@ Triages inbound requests in a Slack channel to different sub-teams within your o
 - [Threat Intel Bot](https://chat.openai.com/g/g-Vy4rIqiCF-threat-intel-bot) - There are several intelligence bots out there, and thank goodness for my own job security they're pretty meh. This one is probably the best so far I've tested.
 - Mandiant Advantage 
 
+- [CavalierGPT by Hudson Rock](www.hudsonrock.com/cavaliergpt) - CavalierGPT is a powerful assistant built on the Cavalier API, designed to deliver detailed insights into domains, emails, usernames, IPs, keywords, and cybersecurity trends to uncover threats and enhance security.
+
 ### Red Team / Penetration Testing
 - [ReconAIzer extension for Burp Suite](https://github.com/hisxo/ReconAIzer)
 - [PassGAN - passsword guessing / dictionary generation](https://github.com/hisxo/ReconAIzer)
